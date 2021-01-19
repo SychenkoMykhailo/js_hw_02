@@ -4,12 +4,26 @@
 // принимающую строку (в строке будут только слова и пробелы) 
 // и цену гравировки одного слова, и возвращающую цену гравировки всех слов в строке.
 
-const calculateEngravingPrice = function(message, pricePerWord) {
-	let strSplit = message.split([' '])
-	let len = strSplit.length
-	return (`Цена всех товаров = ${len * pricePerWord}`);
+const calculateEngravingPrice = function (message, pricePerWord) {
+  let strSplit = message.split(" ");
+  let len = strSplit.length;
+  return `Цена всех товаров = ${len * pricePerWord}`;
 };
-console.log(calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 10));
-console.log(calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus',20));
-console.log(calculateEngravingPrice('Donec orci lectus aliquam est magnis',40));
-console.log(calculateEngravingPrice('Donec orci lectus aliquam est magnis',20));
+console.log(
+  calculateEngravingPrice(
+    "Proin sociis natoque et magnis parturient montes mus",
+    10
+  )
+);
+console.log(
+  calculateEngravingPrice(
+    "Proin sociis natoque et magnis parturient montes mus",
+    20
+  )
+);
+console.log(
+  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 40)
+);
+console.log(
+  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)
+);
